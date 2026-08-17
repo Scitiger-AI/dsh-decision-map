@@ -33,10 +33,5 @@
     "client": {
       "platform": "web"
     }
-  },
-  "peerDependencies": {
-    "@deepseek-ai/cordis": "^4.0.1",
-    "@deepseek-ai/dsh-session": "^0.1.0-rc.6",
-    "@deepseek-ai/dsh-session-projection": "^0.1.0-rc.6"
   }
 }
