@@ -1,0 +1,15 @@
+# dsh-decision-map bundle patch: one insert over the composed profile root.
+#
+# The single row loads BOTH halves of this dual-face package:
+#   - the node half (`lib/index.js`, resolved through the "." export) registers
+#     the `decisionMap` session projection on `ctx.sessionProjections`;
+#   - the browser half (`lib/client.js`, resolved through the "./client" export
+#     declared by the `dsh.client` manifest) registers the "决策地图" tab in the
+#     conversation's `conversation.view` slot ring.
+#
+# Later bundle layers and the user's own `cordis.patch.yml` can disable or
+# restyle this row by id (`decision-map`).
+
+- insert:
+    - id: decision-map
+      name: dsh-decision-map
